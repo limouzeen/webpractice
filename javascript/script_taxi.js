@@ -19,22 +19,22 @@
             let result = 35.00 + (time * 2);
             showResult.innerHTML = result.toFixed(4);
         } else if (distance > 1 && distance <= 10) {
-            let result = 35.00 + (distance * 5.50) + (time * 2);
+            let result = 35.00 + ((distance - 1) * 5.50) + (time * 2);
             showResult.innerHTML = result.toFixed(4);
         } else if (distance > 10 && distance <= 20) {
-            let result = 35.00 + (10 * 5.50) + (distance * 6.50) + (time * 2);
+            let result = 35.00 + (10 * 5.50) + ((distance - 10)e * 6.50) + (time * 2);
             showResult.innerHTML = result.toFixed(4);
         } else if (distance > 20 && distance <= 40) {
-            let result = 35.00 + (10 * 5.50) + (20 * 6.50) + (distance * 7.50) + (time * 2);
+            let result = 35.00 + (10 * 5.50) + (20 * 6.50) + ((distance - 20) * 7.50) + (time * 2);
             showResult.innerHTML = result.toFixed(4);
         } else if (distance > 40 && distance <= 60) {
-            let result = 35.00 + (10 * 5.50) + (20 * 6.50) + (40 * 7.50) + (distance * 8.00) + (time * 2);
+            let result = 35.00 + (10 * 5.50) + (20 * 6.50) + (40 * 7.50) + ((distance - 40) * 8.00) + (time * 2);
             showResult.innerHTML = result.toFixed(4);
         } else if (distance > 60 && distance <= 80) {
-            let result = 35.00 + (10 * 5.50) + (20 * 6.50) + (40 * 7.50) + (60 * 8.00) + (distance * 9.00) + (time * 2);
+            let result = 35.00 + (10 * 5.50) + (20 * 6.50) + (40 * 7.50) + (60 * 8.00) + ((distance - 60) * 9.00) + (time * 2);
             showResult.innerHTML = result.toFixed(4);
         } else if (distance > 80) {
-            let result = 35.00 + (10 * 5.50) + (20 * 6.50) + (40 * 7.50) + (60 * 8.00) + (80 * 9.00) + (distance * 10.50) + (time * 2);
+            let result = 35.00 + (10 * 5.50) + (20 * 6.50) + (40 * 7.50) + (60 * 8.00) + (80 * 9.00) + ((distance - 80) * 10.50) + (time * 2);
             showResult.innerHTML = result.toFixed(4);
         } else {
             alert("Error: กรุณาทำรายการใหม่อีกครั้งค่ะ ^0^");
