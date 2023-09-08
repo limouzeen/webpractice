@@ -22,7 +22,7 @@
             let result = 35.00 + ((distance - 1) * 5.50) + (time * 2);
             showResult.innerHTML = result.toFixed(4);
         } else if (distance > 10 && distance <= 20) {
-            let result = 35.00 + (10 * 5.50) + ((distance - 10)e * 6.50) + (time * 2);
+            let result = 35.00 + (10 * 5.50) + ((distance - 10) * 6.50) + (time * 2);
             showResult.innerHTML = result.toFixed(4);
         } else if (distance > 20 && distance <= 40) {
             let result = 35.00 + (10 * 5.50) + (20 * 6.50) + ((distance - 20) * 7.50) + (time * 2);
