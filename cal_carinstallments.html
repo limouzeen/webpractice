@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Car Installments">
+    <meta name="keywords" content="Car Installments">
+    <meta name="author" content="Amarat Kositwongsakul 6552410012">
+    <link rel="shortcut icon" href="./images/imagepractice03/car_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style_ cal_carinstallments.css">
+    <title>Car Installments</title>
+</head>
+<body>
+<div class="container">
+    <h1>Car Installments</h1>
+    <img src="./images/imagepractice03/car.png" alt="car">
+    <hr>
+    <div onsubmit="return false" class="input-details">
+        <br>
+        <label>ป้อนชื่อ :</label>
+        <input id="input-name" type="text"></input><br><br>
+        <label>ป้อนนามสกุล :</label>
+        <input id="input-lastname" type="text"></input><br><br>
+    </div>
+    <div class="radio-typeofcar">
+        <label>เลือกยี่ห้อรถ :</label>
+        <input value="Honda" type="radio" name="choose" id="radio-honda">
+        <label for="radio-honda">Honda</label>
+        <input  value="Toyota" type="radio" name="choose" id="radio-toyota">
+        <label for="radio-toyota">Toyota</label>
+        <input  value="MG" type="radio" name="choose" id="radio-mg">
+        <label for="radio-mg">MG</label>
+        <input value="Mazda" type="radio" name="choose" id="radio-mazda">
+        <label for="radio-mazda">Mazda</label>
+        <input value="ISUZU" type="radio" name="choose" id="radio-isuzu">
+        <label for="radio-isuzu">ISUZU</label>
+        <input value="Nissan" type="radio" name="choose" id="radio-nissan">
+        <label for="radio-nissan">Nissan</label><br><br>
+    </div>
+    <div onsubmit="return false" class="input-details1">
+        <label>ราคารถ :</label>
+        <input id="input-carprice" type="text"></input><label> บาท</label><br><br>
+        <label>จำนวนเงินดาวน์ (%) :</label>
+        <input id="input-downpay" type="text"></input><br><br>
+        <label>จำนวนปีที่ผ่อน 12-84 งวด:</label>
+        <select name="cars">
+            <option value="12">12 งวด (1 ปี)</option>
+            <option value="24">24 งวด (2 ปี)</option>
+            <option value="36">36 งวด (3 ปี)</option>
+            <option value="48">48 งวด (4 ปี)</option>
+            <option value="60">60 งวด (5 ปี)</option>
+            <option value="72">72 งวด (6 ปี)</option>
+            <option value="84">84 งวด (7 ปี)</option>
+          </select><br><br>
+        <label>ดอกเบี้ย (%) ต่อปี:</label>
+        <input id="input-interest" type="text"></input><br><br>
+    </div>
+    <div class="btn">
+        <button id="btn-calculate" type="button">คำนวณ</button>
+        <button id="btn-reset" type="button">ยกเลิก</button><br><br>
+    </div>
+    <hr>
+    <div class="result">
+        <p>ผลการคำนวณเบื้องต้น</p><br>
+        <label>สวัสดีคุณ :</label> <span id="spn-name">XXXXX</span><br>
+        <label>คุณได้เลือกยี่ห้อรถ :</label> <span id="spn-typeofcar">XXXXX</span><br>
+        <label>ใช้เงินดาวน์ :</label> <span id="spn-downpay">XXXXX</span><label> บาท</label><br>
+        <label>คิดเป็นยอดจัดไฟแนนซ์ :</label> <span id="spn-financepay">XXXXX</span><label> บาท</label><br>
+        <label>คิดเป็นค่างวดต่อเดือน :</label> <span id="spn-paypermonth">XXXXX</span><label> บาท</label><br>
+</div>
+<script src="./javascript/script_ cal_carinstallments.js"></script>
+</body>
+</html>

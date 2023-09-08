@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Convert Temperature">
+    <meta name="keywords" content="Convert Temperature">
+    <meta name="author" content="Amarat Kositwongsakul 6552410012">
+    <link rel="shortcut icon" href="./images/imagepractice02/temp_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style_ convert_temperature.css">
+    <title>Convert Temperature</title>
+</head>
+<body>
+<div class="container">
+    <h1>Temperature Conversion</h1>
+    <h3>Cel to Fah | Fah to Cel</h3>
+    <img src="./images/imagepractice02/temp.png" alt="square">
+    <p> พื้นที่สี่เหลี่ยม = กว้าง x ยาว</p>
+    <hr>
+    <div onsubmit="return false" class="input-temp">
+        <label>ป้อนอุณหภูมิ :</label>
+        <input id="input-temperature" type="text"></input>
+        <label id =unit-input>เซลเซียส</label>
+    </div>
+    <div class="radio-temp">
+        <input type="radio" name="choose" id="radio-celtofah">
+        <label for="radio-celtofah">แปลง Celsius to Fahrenheit | F = C * 9 / 5 + 32</label><br>
+        <input type="radio" name="choose" id="radio-fahtocel">
+        <label for="radio-celtofah">แปลง Fahrenheit to Celsius | C = (F -32) * 5 / 9</label>
+    </div>
+    <div class="btn">
+        <button id="btn-calculate" type="button">แปลงอุณหภูมิ</button>
+        <button id="btn-reset" type="button">ยกเลิก</button>
+    </div>
+    <hr>
+    <div class="result">
+    <label>มีค่าเป็น</label> <span id="spn-result">0.00</span>
+    <label id="unit-result">ฟาเรนไฮท์</label> 
+    </div>
+</div>
+<script src="./javascript/script_ convert_temperature.js"></script>
+</body>
+</html>
